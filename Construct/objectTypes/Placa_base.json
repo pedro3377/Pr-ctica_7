@@ -1,0 +1,67 @@
+{
+	"name": "Placa_base",
+	"plugin-id": "Sprite",
+	"sid": 396641369687961,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "ArrastrarYSoltar",
+			"sid": 893454900247538
+		},
+		{
+			"behaviorId": "Pin",
+			"name": "Pegado",
+			"sid": 357560635978002
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 601,
+						"height": 756,
+						"originX": 0.5166389351081531,
+						"originY": 0.5013227513227513,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5305356,
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "CPU",
+								"x": 0.5440931780366056,
+								"y": 0.3134920634920635
+							},
+							{
+								"name": "GPU",
+								"x": 0.3610648918469218,
+								"y": 0.6071428571428571
+							},
+							{
+								"name": "ram",
+								"x": 0.8036605657237936,
+								"y": 0.31613756613756616
+							}
+						],
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 629343232878151,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

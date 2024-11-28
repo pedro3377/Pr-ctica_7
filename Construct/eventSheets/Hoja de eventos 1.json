@@ -1,0 +1,509 @@
+{
+	"name": "Hoja de eventos 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Aciertos",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 859515998203348
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 559836321945747
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Texto3",
+					"sid": 980769735086889,
+					"parameters": {
+						"text": "Aciertos"
+					}
+				}
+			],
+			"sid": 439574009876572
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaDeTextoPlaca",
+					"sid": 658689463182574,
+					"parameters": {
+						"text": "\"Placa Base\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 787107293707982
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Placa_base",
+					"sid": 401325846476697,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 724758015595557,
+					"parameters": {
+						"variable": "Aciertos",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "EntradaDeTextoPlaca",
+					"sid": 258153298144284,
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 558894774037905
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaDeTextoCPU",
+					"sid": 379751500183964,
+					"parameters": {
+						"text": "\"CPU\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 984145711635964
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "cpu",
+					"sid": 477697127979849,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 876380371627748,
+					"parameters": {
+						"variable": "Aciertos",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "EntradaDeTextoCPU",
+					"sid": 688636536948860,
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 275999644634606
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaDeTextoCPU_cooler",
+					"sid": 303517803202285,
+					"parameters": {
+						"text": "\"CPU Cooler\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 945311890422498
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "cpu_cooler",
+					"sid": 137484467690372,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 999008899690307,
+					"parameters": {
+						"variable": "Aciertos",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "EntradaDeTextoCPU_cooler",
+					"sid": 382484519021985,
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 951498042943356
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaDeTextoGPU",
+					"sid": 929249272412359,
+					"parameters": {
+						"text": "\"GPU\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 505549318335545
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Grafica",
+					"sid": 597826951224244,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 464284412599642,
+					"parameters": {
+						"variable": "Aciertos",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "EntradaDeTextoGPU",
+					"sid": 975367453963259,
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 688465484048717
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaDeTextoPSU",
+					"sid": 161181272369821,
+					"parameters": {
+						"text": "\"psu\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 228667846336755
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "psu",
+					"sid": 915806463001982,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 197999159118960,
+					"parameters": {
+						"variable": "Aciertos",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "EntradaDeTextoPSU",
+					"sid": 452812367222927,
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 475694667556836
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaDeTextoRAM",
+					"sid": 691288983836949,
+					"parameters": {
+						"text": "\"ram\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "trigger-once-while-true",
+					"objectClass": "System",
+					"sid": 170330095273604
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "ram",
+					"sid": 124178444127285,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 993022584158016,
+					"parameters": {
+						"variable": "Aciertos",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "EntradaDeTextoRAM",
+					"sid": 653955182658086,
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 761178399734638
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-at-offset",
+					"objectClass": "Placa_base",
+					"sid": 507898896341807,
+					"parameters": {
+						"object": "Comprobador_PlacaBase",
+						"offset-x": "0",
+						"offset-y": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "Placa_base",
+					"sid": 219768662516270,
+					"behaviorType": "Pegado",
+					"parameters": {
+						"pin-to": "ATX_Case",
+						"image-point": "1",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 726599053268626
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-at-offset",
+					"objectClass": "psu",
+					"sid": 173289374109330,
+					"parameters": {
+						"object": "Comprobador_psu",
+						"offset-x": "0",
+						"offset-y": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "psu",
+					"sid": 506756133287952,
+					"behaviorType": "Pegado",
+					"parameters": {
+						"pin-to": "ATX_Case",
+						"image-point": "2",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 474225791568554
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "cpu",
+					"sid": 761367195603170,
+					"parameters": {
+						"object": "Placa_base"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "cpu",
+					"sid": 888371751578432,
+					"behaviorType": "Pegado",
+					"parameters": {
+						"pin-to": "Placa_base",
+						"image-point": "1",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 838826676261105
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "cpu_cooler",
+					"sid": 861180621994732,
+					"parameters": {
+						"object": "Placa_base"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "cpu_cooler",
+					"sid": 982935826197042,
+					"behaviorType": "Pegado",
+					"parameters": {
+						"pin-to": "Placa_base",
+						"image-point": "1",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 109677200199186
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Grafica",
+					"sid": 347775132884561,
+					"parameters": {
+						"object": "Placa_base"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "Grafica",
+					"sid": 129050379577273,
+					"behaviorType": "Pegado",
+					"parameters": {
+						"pin-to": "Placa_base",
+						"image-point": "2",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 730090807104243
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "ram",
+					"sid": 246120940660118,
+					"parameters": {
+						"object": "Placa_base"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "pin-to-object-imagepoint",
+					"objectClass": "ram",
+					"sid": 286575914221260,
+					"behaviorType": "Pegado",
+					"parameters": {
+						"pin-to": "Placa_base",
+						"image-point": "3",
+						"angle": true,
+						"width-type": "no",
+						"height-type": "no",
+						"z": false
+					}
+				}
+			],
+			"sid": 479174169407885
+		}
+	],
+	"sid": 651032078427069
+}
